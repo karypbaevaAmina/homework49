@@ -1,13 +1,9 @@
-import com.sun.net.httpserver.HttpExchange;
+package com.example.demo.server;
 
-import server.BasicServer;
-import server.ContentType;
-import server.Cookie;
-import server.Utils;
-import service.Candidate;
-import service.CandidatesDataModel;
-import service.Profile;
-import service.ProfileDataModel;
+import com.example.demo.model.Candidate;
+import com.example.demo.model.Profile;
+
+import com.sun.net.httpserver.HttpExchange;
 
 import java.io.IOException;
 import java.nio.file.Path;

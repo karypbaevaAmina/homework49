@@ -1,5 +1,4 @@
-package com.example.demo.service;
-import java.util.ArrayList;
+package com.example.demo.model;
 
 public class Profile {
     private int id;

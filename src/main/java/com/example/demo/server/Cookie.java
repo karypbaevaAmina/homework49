@@ -1,4 +1,4 @@
-package com.example.homework50.server;
+package com.example.demo.server;
 
 import java.net.URLEncoder;
 import java.nio.charset.Charset;

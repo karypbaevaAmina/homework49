@@ -1,7 +1,7 @@
-package com.example.homework50.server;
+package com.example.demo.server;
 
-import com.example.homework50.service.Candidate;
-import com.example.homework50.service.Profile;
+import com.example.demo.model.Candidate;
+import com.example.demo.model.Profile;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -49,20 +49,20 @@ public class Utils {
     }
 
     public static List<Candidate> getCandidatesFromFile() throws IOException {
-        Path path = Paths.get("./data/candidates.json");
+        Path path = Paths.get("src/main/resources/static/json/candidates.json");
         String json = Files.readString(path);
         return GSON.fromJson(json, new TypeToken<List<Candidate>>(){}.getType());
     }
 
     public static List<Profile> getProfilesFromFile() throws IOException {
-        Path path = Paths.get("./data/profiles.json");
+        Path path = Paths.get("src/main/resources/static/json/profiles.json");
         String json = Files.readString(path);
         return GSON.fromJson(json, new TypeToken<List<Profile>>(){}.getType());
     }
 
     public static void writeProfilesToFile(List<Profile> profiles) {
         String json = GSON.toJson(profiles);
-        try (PrintWriter writer = new PrintWriter(new FileWriter("./data/profileDir/profiles.json"))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("src/main/resources/static/json/profiles.json"))) {
             writer.write(json);
         } catch (IOException e) {
             e.printStackTrace();

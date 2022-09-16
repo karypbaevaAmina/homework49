@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.model;
 
 public class Candidate {
     private transient Integer id;
@@ -7,7 +7,9 @@ public class Candidate {
     private transient int votes;
     private boolean top; // для выделения победителя
 
-
+    public Candidate(String photo) {
+        this.photo = photo;
+    }
 
     public Integer getId() {
         return id;

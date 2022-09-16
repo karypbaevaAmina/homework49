@@ -1,4 +1,4 @@
-package com.example.homework50.server;
+package com.example.demo.server;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;

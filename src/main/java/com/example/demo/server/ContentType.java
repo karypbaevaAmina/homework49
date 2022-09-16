@@ -1,4 +1,4 @@
-package com.example.homework50.server;
+package com.example.demo.server;
 
 public enum ContentType {
     TEXT_PLAIN("text/plain; charset=utf-8"),

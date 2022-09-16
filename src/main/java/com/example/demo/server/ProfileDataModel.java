@@ -1,5 +1,7 @@
-package com.example.homework50.server;
-import com.example.homework50.service.Profile;
+package com.example.demo.server;
+
+
+import com.example.demo.model.Profile;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -4,42 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Vote for us!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="css/candidates.css">
-</head>
 
+</head>
 <body>
-    <div class="container flex flex-col align-center">
+<div class="container flex flex-col align-center">
     <h1>Vote for us</h1>
     <main class="flex flex-wrap align-evenly">
-    <div class="card">
-      <form action="/vote" method="post" class="flex flex-col align-center" href="#">
-        <img src="images/1.jpeg">
-        <p>name surname</p>
-        <input name="candidateId" type="hidden" value="candidate_id">
-        <button type="submit" class="vote flex align-center">Vote</button>
-      </form>
-    </div>
-    <div class="card">
-      <form action="/vote" method="post" class="flex flex-col align-center" href="#">
-        <img src="images/1.jpeg">
-        <p>name surname</p>
-        <input name="candidateId" type="hidden" value="candidate_id">
-        <button type="submit" class="vote flex align-center">Vote</button>
-      </form>
-    </div>
-    <div class="card">
-      <form action="/vote" method="post" class="flex flex-col align-center" href="#">
-        <img src="images/1.jpeg">
-        <p>name surname</p>
-        <input name="candidateId" type="hidden" value="candidate_id">
-        <button type="submit" class="vote flex align-center">Vote</button>
-      </form>
-    </div>
+        <#list candidates as candidate>
+            <div class="card">
+                <form action="/vote" method="post" class="flex flex-col align-center" href="#">
+                    <img src="images/${candidate.photo}">
+                    <p>${candidate.name}</p>
+                    <input name="candidateId" type="hidden" value="${candidate.id}">
+                    <button type="submit" class="vote flex align-center">Vote</button>
+                </form>
+            </div>
+        </#list>
     </main>
-    
-      <p>-------------------------------------------------------</p>
-      <a class="back flex align-center" href="/votes">Show total votes</a>
-    </div>
+
+    <p>-------------------------------------------------------</p>
+    <a class="back flex align-center" href="/votes">Show total votes</a>
+</div>
+
 </body>
 
 </html>
