@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "22@mail.ru",
+    "password": "2"
+  },
+  {
+    "id": 2,
+    "firstName": "Guns",
+    "lastName": "Guns",
+    "email": "222@mail.ru",
+    "password": "2"
+  },
+  {
+    "id": 3,
+    "firstName": "Lel",
+    "lastName": "Lel",
+    "email": "22222@mail.ru",
+    "password": "2",
+    "booksOnHand": [],
+    "booksWasTaken": []
+  },
+  {
+    "id": 4,
+    "firstName": "VAs",
+    "lastName": "vess",
+    "email": "kik@mail.ru",
+    "password": "2"
+  },
+  {
+    "id": 5,
+    "firstName": "Pop",
+    "lastName": "Pop",
+    "email": "232@masfsa.kg",
+    "password": "2"
+  }
+]
